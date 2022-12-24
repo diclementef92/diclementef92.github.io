@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Ubuntu&display=swap");
+
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+img.profilo {
+  height: 40vh;
+}
 .esperienze {
   border: 2px solid blue;
+}
+.titolo {
+  font-family: "Poppins", sans-serif;
 }
