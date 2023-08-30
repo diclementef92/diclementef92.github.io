@@ -3,71 +3,132 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/stylesheet.css">
-    <title>Web Page di Francesco Di Clemente</title>
+    <title>Curriculum Vitae</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: f4f4f4;
+            color: black;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .profile-img {
+            width: 30vw;
+            /* height: 80px; */
+            /* border-radius: 50%; */
+            margin-right: 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact i {
+            margin-right: 0.5rem;
+        }
+
+        .bio {
+            margin-top: 1rem;
+        }
+
+        .bio p {
+            line-height: 1.6;
+        }
+    </style>
 </head>
 
 <body>
-    <h1 class="titolo">Francesco Di Clemente</h1>
-    <h2 class="titolo">diclementef92@gmail.com</h2>
-    <!-- <a href="#footer">Scorri giù</a> -->
-    <main>
-        <a href="#"><img class="profilo" src="./assets/img/profilo.jpg" alt="immagine-di-profilo"></a>
-        <p>Nato a Sondrio, ho studiato a Milano dove vivo ormai da 10 anni. Sono appassionato di informatica e
-            seguo con
-            interesse
-            l'evoluzione tecnologica e scientifica.
-        </p>
-        <p>Mi piace leggere e guardare serie tv, i miei generi preferiti sono: Fantascienza e Fantasy.
-        </p>
+    <header>
+        <img class="profile-img" src="assets/img/profilo.jpg" alt="Foto Profilo">
+        <h1>Francesco Di Clemente
+        </h1>
+        <p>Qualifica Ricercata: Front End Developer</p>
+    </header>
+    <div class="container">
+        <section class="contact">
+            <i class="fas fa-envelope"></i>
+            <p>diclementef92@gmail.com</p>
+        </section>
+        <section class="bio">
+            <h2>Biografia</h2>
+            <p>Sono di Milano, ho 30 anni, il percorso di studi in ingegneria informatica mi ha permesso di approfondire
+                le nozioni teoriche dell'informatica e di sviluppare capacità analitiche e di problem solving.
+                Successivamente con il diploma di Full Stack Web Developer di Epicode ho maturato un'esperienza pratica
+                di 950 ore, 13 progetti personali e 6 progetti in team (remote working)
 
-        <h2 class="titolo">Le mie competenze</h2>
-        <div>
+                Realizzo pagine web responsive con particolare attenzione all'esperienza utente.
+
+                Credo fermamente nel lavoro di squadra e mi sforzo di creare un ambiente di lavoro collaborativo in cui
+                ciascun membro possa esprimere il proprio potenziale al massimo.
+                Sono sempre aperto all'apprendimento continuo e sono pronto ad affrontare nuove sfide nel campo dello
+                sviluppo software.
+            </p>
+        </section>
+        <section class="education">
+            <h2>Formazione</h2>
             <ul>
-                <li>Informatica
-                    <ul>
-                        <li>Html, Css</li>
-                        <li>Java</li>
-                    </ul>
-                </li>
-                <li>Lingua Inglese: B1</li>
+                <li>Laurea in Informatica - Università XYZ</li>
+                <li>Corso di Web Design - Online Academy</li>
             </ul>
-
-            <h2 class="titolo">Competenze da aquisire</h2>
-            <ol>
-                <li>Javascript</li>
-                <li>Angular</li>
-                <li>Sviluppo app con Android/iOS</li>
-            </ol>
-        </div>
-
-        <div>
-            <h2 class="titolo">Esperienze</h2>
-            <table class="esperienze">
-                <tr>
-                    <th><strong>Nome</strong></th>
-                    <th><strong>Data</strong></th>
-                </tr>
-                <tbody>
-                    <tr>
-                        <td>Analist Consultant presso CapGemini</td>
-                        <td>da ottobre 2019 a ottobre 2022</td>
-                    </tr>
-                    <tr>
-                        <td>Laurea Ingegneria Informatica Politecnico Milano</td>
-                        <td>dal 2012 al 2019</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <br>
-
-
-        <a href="https://github.com/diclementef92">GitHub</a>
-    </main>
-    <footer id="footer">Copyright&copy; Francesco Di Clemente</footer>
+        </section>
+        <section class="experience">
+            <h2>Esperienze</h2>
+            <ul>
+                <li>Sviluppatore Web presso Azienda ABC</li>
+                <li>Stage come Web Designer presso Società XYZ</li>
+            </ul>
+        </section>
+        <section class="skills">
+            <h2>Competenze</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Progettazione UI/UX</li>
+            </ul>
+        </section>
+        <section class="projects">
+            <h2>Progetti</h2>
+            <ul>
+                <li>Sito Web Portfolio Personale</li>
+                <li>Applicazione Mobile per la Gestione delle Attività</li>
+            </ul>
+        </section>
+    </div>
 </body>
 
 </html>
