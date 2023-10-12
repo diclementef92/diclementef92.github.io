@@ -25,7 +25,7 @@ header {
   align-items: stretch;
   height: 100%;
 }
-/* navbar */
+/* sidebar */
 #sidebar {
   width: 250px;
   margin-left: 1em;
@@ -39,7 +39,7 @@ header {
 #sidebar.active {
   margin-left: -250px;
 }
-/* end navbar */
+/* end sidebar */
 
 @media screen and (max-width: 600px) {
   .profile-img {
@@ -52,13 +52,13 @@ header {
   }
 }
 
-.container {
+/* .container {
   max-width: 800px;
   margin: 2rem auto;
   padding: 2rem;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+} */
 
 h1 {
   margin-top: 0;
