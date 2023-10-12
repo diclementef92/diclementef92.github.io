@@ -15,8 +15,9 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <!-- FONTAWESOME -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
-        integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/c29d49eb7f.js" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -37,7 +38,7 @@
         <nav id="sidebar" class="custom-color-sidebar">
             <div class="sidebar-header">
                 <span class="size-font-sidebar">
-                    <span class="mt-4">Sidebar</span>
+                    <span class="mt-4"></span>
                 </span>
             </div>
             <ul class="list-unstyled components">
@@ -45,20 +46,21 @@
                     <a href="#chisono"><i class="fas fa-home mr-3"></i>Chi sono</a>
                 </li>
                 <li>
-                    <a href="#esperienze" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
-                            class="fas fa-cog mr-3"></i>Esperienze</a>
+                    <a href="#esperienze" data-toggle="collapse">
+                        <i class="fa-solid fa-briefcase mr-3"></i>Esperienze</a>
                 </li>
                 <li>
-                    <a href="#formazione" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
-                            class="fas fa-cog mr-3"></i>Formazione</a>
+                    <a href="#formazione" data-toggle="collapse">
+                        <i class="fa-solid fa-graduation-cap mr-2"></i>
+                        Formazione</a>
                 </li>
                 <li>
-                    <a href="#progetti" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
-                            class="fas fa-cog mr-3"></i>Progetti</a>
+                    <a href="#progetti" data-toggle="collapse">
+                        <i class="fa-solid fa-laptop-code mr-3"></i>Progetti</a>
                 </li>
                 <li>
-                    <a href="#contatti" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
-                            class="fas fa-cog mr-3"></i>Contatti</a>
+                    <a href="#contatti" data-toggle="collapse">
+                        <i class="fa-solid fa-address-card mr-3"></i>Contatti</a>
                 </li>
             </ul>
         </nav>
@@ -66,21 +68,17 @@
         <div id="content">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <button type="button" id="sidebarCollapse" class="btn btn-dark">
-                        <i class="fas fa-align-center"></i>
+                    <button type="button" id="sidebarCollapse" class="btn btn-light">
+                        <i class="fas fa-bars"></i>
                     </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-a uto" type="button" data-toggle="collapse"
+                    <!-- <button class="btn btn-dark d-inline-block d-lg-none ml-a uto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-bars"></i>
-                    </button>
+                    </button> -->
                 </div>
             </nav>
-            <section class="contact">
-                <i class="fa-regular fa-envelope"></i>
-                <a href="mailto:diclementef92@gmail.com">diclementef92@gmail.com</a>
 
-            </section>
             <section class="bio">
                 <h2>Biografia</h2>
                 <p>Sono di Milano, ho 30 anni, il percorso di studi in ingegneria informatica mi ha permesso di
@@ -136,6 +134,13 @@
                             sito</a>
                     </li>
                 </ul>
+            </section>
+            <section class="contact">
+                <h2>Contatti</h2>
+                <p>
+                    <i class="fas fa-regular fa-envelope"></i>
+                    <a href="mailto:diclementef92@gmail.com">diclementef92@gmail.com</a>
+                </p>
             </section>
         </div>
     </div>
