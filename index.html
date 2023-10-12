@@ -5,76 +5,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae di Francesco Di Clemente</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- FONTAWESOME -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./assets/css/stylesheet.css">
-    <script src="https://kit.fontawesome.com/c29d49eb7f.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <header>
+
+    <!-- <header>
         <img class="profile-img" src="assets/img/profilo.jpg" alt="Foto Profilo">
         <h1>Francesco Di Clemente
         </h1>
         <p>Qualifica Ricercata: Front End Developer</p>
-    </header>
-    <div class="container">
-        <section class="contact">
-            <i class="fa-regular fa-envelope"></i>
-            <!-- <p>diclementef92@gmail.com</p> -->
-            <a href="mailto:diclementef92@gmail.com">diclementef92@gmail.com</a>
-
-        </section>
-        <section class="bio">
-            <h2>Biografia</h2>
-            <p>Sono di Milano, ho 30 anni, il percorso di studi in ingegneria informatica mi ha permesso di approfondire
-                le nozioni teoriche dell'informatica e di sviluppare capacità analitiche e di problem solving.
-                Successivamente con il diploma di Full Stack Web Developer di Epicode ho maturato un'esperienza pratica
-                di 950 ore, 13 progetti personali e 6 progetti in team (remote working)
-
-                Realizzo pagine web responsive con particolare attenzione all'esperienza utente.
-
-                Credo fermamente nel lavoro di squadra e mi sforzo di creare un ambiente di lavoro collaborativo in cui
-                ciascun membro possa esprimere il proprio potenziale al massimo.
-                Sono sempre aperto all'apprendimento continuo e sono pronto ad affrontare nuove sfide nel campo dello
-                sviluppo software.
-            </p>
-        </section>
-        <section class="education">
-            <h2>Formazione</h2>
-            <ul>
-                <li>06.2023 Epicode Corso di Full Stack Web Development</li>
-                <li>07.2019 Laurea in Ingegneria Informatica - Politecnico di Milano</li>
-            </ul>
-        </section>
-        <section class="experience">
-            <h2>Esperienze</h2>
-            <ul>
-                <li>2019 - 2022 Analist Consultant presso Capgemini Italia S.p.a.
-                    <br><cite>Progetto Move-In: gestione database Sql Oracle</cite>
+    </header> -->
+    <div class="wrapper">
+        <nav id="sidebar" class="custom-color-sidebar">
+            <div class="sidebar-header">
+                <span class="size-font-sidebar">
+                    <span class="mt-4">Sidebar</span>
+                </span>
+            </div>
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#chisono"><i class="fas fa-home mr-3"></i>Chi sono</a>
+                </li>
+                <li>
+                    <a href="#esperienze" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                            class="fas fa-cog mr-3"></i>Esperienze</a>
+                </li>
+                <li>
+                    <a href="#formazione" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                            class="fas fa-cog mr-3"></i>Formazione</a>
+                </li>
+                <li>
+                    <a href="#progetti" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                            class="fas fa-cog mr-3"></i>Progetti</a>
+                </li>
+                <li>
+                    <a href="#contatti" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                            class="fas fa-cog mr-3"></i>Contatti</a>
                 </li>
             </ul>
-        </section>
-        <section class="skills">
-            <h2>Competenze</h2>
-            <ul>
-                <li>React</li>
-                <li>HTML, CSS, JavaScript, Typescript</li>
-                <li>Java: Spring e Springboot</li>
-                <li>Sql: Oracle, Postgres</li>
-            </ul>
-        </section>
-        <section class="projects">
-            <h2>Progetti</h2>
-            <ul>
-                <li>Sito Web Meteo sviluppato con React: <a href="https://weather-app-diclemente.netlify.app">link al
-                        sito</a>
-                </li>
-                <li>Sito Web Netflix Clone sviluppato con React: <a
-                        href="https://netflix-clone-diclemente.netlify.app/">link al
-                        sito</a>
-                </li>
-            </ul>
-        </section>
+        </nav>
+
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                        <i class="fas fa-align-center"></i>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-a uto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+            <section class="contact">
+                <i class="fa-regular fa-envelope"></i>
+                <a href="mailto:diclementef92@gmail.com">diclementef92@gmail.com</a>
+
+            </section>
+            <section class="bio">
+                <h2>Biografia</h2>
+                <p>Sono di Milano, ho 30 anni, il percorso di studi in ingegneria informatica mi ha permesso di
+                    approfondire
+                    le nozioni teoriche dell'informatica e di sviluppare capacità analitiche e di problem solving.
+                    Successivamente con il diploma di Full Stack Web Developer di Epicode ho maturato un'esperienza
+                    pratica
+                    di 950 ore, 13 progetti personali e 6 progetti in team (remote working)
+
+                    Realizzo pagine web responsive con particolare attenzione all'esperienza utente.
+
+                    Credo fermamente nel lavoro di squadra e mi sforzo di creare un ambiente di lavoro collaborativo in
+                    cui
+                    ciascun membro possa esprimere il proprio potenziale al massimo.
+                    Sono sempre aperto all'apprendimento continuo e sono pronto ad affrontare nuove sfide nel campo
+                    dello
+                    sviluppo software.
+                </p>
+            </section>
+            <section class="education">
+                <h2>Formazione</h2>
+                <ul>
+                    <li>06.2023 Epicode Corso di Full Stack Web Development</li>
+                    <li>07.2019 Laurea in Ingegneria Informatica - Politecnico di Milano</li>
+                </ul>
+            </section>
+            <section class="experience">
+                <h2>Esperienze</h2>
+                <ul>
+                    <li>2019 - 2022 Analist Consultant presso Capgemini Italia S.p.a.
+                        <br><cite>Progetto Move-In: gestione database Sql Oracle</cite>
+                    </li>
+                </ul>
+            </section>
+            <section class="skills">
+                <h2>Competenze</h2>
+                <ul>
+                    <li>React</li>
+                    <li>HTML, CSS, JavaScript, Typescript</li>
+                    <li>Java: Spring e Springboot</li>
+                    <li>Sql: Oracle, Postgres</li>
+                </ul>
+            </section>
+            <section class="projects">
+                <h2>Progetti</h2>
+                <ul>
+                    <li>Sito Web Meteo sviluppato con React: <a href="https://weather-app-diclemente.netlify.app">link
+                            al
+                            sito</a>
+                    </li>
+                    <li>Sito Web Netflix Clone sviluppato con React: <a
+                            href="https://netflix-clone-diclemente.netlify.app/">link al
+                            sito</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </div>
+    <script type="text/javascript">
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        });
+    </script>
 </body>
 
 </html>
