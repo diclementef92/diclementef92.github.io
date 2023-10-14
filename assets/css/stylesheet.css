@@ -27,17 +27,18 @@ header {
 }
 /* sidebar */
 #sidebar {
-  width: 250px;
-  margin-left: 1em;
-  margin-top: 1em;
-  /* background: #ffffff !important; */
+  height: 100%;
+  width: 30vw;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 100%;
+  background: #cadefa;
   /* color: #fff; */
   transition: all 0.3s;
-  height: 100%;
 }
 
 #sidebar.active {
-  margin-left: -250px;
+  margin-left: -30vw;
 }
 /* end sidebar */
 
