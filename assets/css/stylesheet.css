@@ -1,5 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Ubuntu&display=swap");
-*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Ubuntu&display=swap");
 
 body {
   height: 100%;
@@ -20,25 +19,29 @@ header {
   min-height: 100%;
 }
 .wrapper {
-  display: flex;
   width: 100%;
-  align-items: stretch;
   height: 100%;
+  display: flex;
+  align-items: stretch;
 }
 /* sidebar */
 #sidebar {
   height: 100%;
-  width: 30vw;
+  width: 250px;
   padding-left: 1em;
   padding-top: 1em;
-  padding-bottom: 100%;
+  padding-bottom: 100vh;
   background: #cadefa;
   /* color: #fff; */
   transition: all 0.3s;
 }
 
 #sidebar.active {
-  margin-left: -30vw;
+  margin-left: -250px;
+}
+.size-font-sidebar {
+  font-family: Poppins;
+  font-size: 1.5em;
 }
 /* end sidebar */
 
@@ -72,8 +75,8 @@ h2 {
 }
 
 ul {
-  list-style: inside circle;
-  padding-left: 0;
+  /* list-style: inside circle; */
+  /* padding-left: 0; */
 }
 
 li {
@@ -89,8 +92,11 @@ li {
 
 .bio {
   margin-top: 1rem;
+  display: flex;
 }
-
+.bio img {
+  margin-right: 2em;
+}
 .bio p {
   line-height: 1.6;
 }
