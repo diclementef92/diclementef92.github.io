@@ -2,7 +2,8 @@
 
 body {
   height: 100%;
-  font-family: Arial, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -33,10 +34,13 @@ header {
   padding-top: 1em;
   padding-bottom: 100vh;
   background: #cadefa;
-  /* color: #fff; */
   transition: all 0.3s;
 }
-
+#sidebar li a {
+}
+#sidebar li:hover a {
+  transform: scale(1.05);
+}
 #sidebar.active {
   margin-left: -250px;
 }
@@ -115,6 +119,9 @@ li {
 
 .bio p {
   line-height: 1.6;
+}
+#logo_cap {
+  height: 2em;
 }
 
 @keyframes fadeIn {
