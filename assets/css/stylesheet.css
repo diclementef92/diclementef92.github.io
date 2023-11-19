@@ -29,9 +29,15 @@ header {
 }
 /* sidebar */
 .offcanvas {
+  background: #f4f4f4;
+  background: linear-gradient(0deg, #f4f4f4 25%, rgb(124, 242, 255) 100%);
 }
-
-.offcanvas-body li:hover a {
+.offcanvas-body li {
+  margin-left: 16px;
+  margin-bottom: 1em;
+  transition: all 300ms;
+}
+.offcanvas-body li:hover {
   transform: scale(1.05);
 }
 
@@ -50,7 +56,6 @@ header {
   text-align: center;
   opacity: 0;
   animation: fadeIn 2s forwards;
-  animation-delay: 1s;
 }
 @media screen and (max-width: 600px) {
   .profile-img {
@@ -123,6 +128,23 @@ li {
 }
 #logo-epicode {
   height: 2em;
+}
+.avatar-wrapper {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.avatar-wrapper .avatar {
+  width: 100%;
+  height: auto;
+  margin-top: -25%;
+  transition: all 250ms;
+}
+.avatar-wrapper .avatar:hover {
+  transform: scale(1.1);
 }
 
 @keyframes fadeIn {
