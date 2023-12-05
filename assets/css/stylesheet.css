@@ -100,13 +100,13 @@ li {
 .bio h2 {
   text-shadow: 5px 3px 0px rgba(95, 221, 253, 1);
 }
-/* .profile-img-container {
-  height: 300px;  //Imposta l'altezza desiderata 
-  overflow: visible;
-} */
+.profile-img-container {
+  height: 500px;
+  /* overflow: visible; */
+}
 .profile-img {
   width: 100%;
-  max-height: 600px;
+  height: 100%;
   margin-right: 2em;
   border-radius: 20px;
   box-shadow: 5px 5px 10px 0px rgb(0, 80, 154);
