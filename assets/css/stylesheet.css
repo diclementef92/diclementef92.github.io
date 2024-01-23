@@ -137,6 +137,7 @@ li {
   border-radius: 50%;
   width: 200px;
   height: 200px;
+  cursor: pointer;
 }
 .avatar-wrapper .avatar {
   width: 100%;
@@ -144,9 +145,26 @@ li {
   margin-top: -25%;
   transition: all 250ms;
 }
-.avatar-wrapper .avatar:hover {
+.avatar-wrapper:hover .avatar {
   transform: scale(1.1);
 }
+.avatar-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+/* The overlay effect - lays on top of the container and over the image
+.overlay {
+  position: absolute;
+  top: 0;
+  background: rgba(141, 141, 141, 0.5); 
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+} */
 
 @keyframes fadeIn {
   from {
