@@ -16,6 +16,10 @@ header {
   text-align: center;
   padding: 1rem;
 }
+ul {
+  list-style: none;
+  padding-left: 0;
+}
 #content {
   width: 100%;
   min-height: 100%;
@@ -167,6 +171,21 @@ li {
 .overlay i {
   font-size: 3em;
 }
+.paypal-btn {
+  background-color: #009cde;
+  height: 35px;
+  width: 250px;
+}
+.paypal-btn div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.paypal-btn img {
+  height: 17px;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
