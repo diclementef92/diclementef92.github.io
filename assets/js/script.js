@@ -22,9 +22,9 @@ window.onload = () => {
 
 socialLink = (e, social) => {
   console.log(social);
-  if (social === "github") window.location = "https://github.com/diclementef92";
-  if (social === "instagram")
-    window.location = "https://www.instagram.com/clem_piru/";
-  if (social === "linkedin")
-    window.location = "https://www.linkedin.com/in/francesco-di-clemente";
+  // if (social === "github") window.location = "https://github.com/diclementef92";
+  // if (social === "instagram")
+  //   window.location = "https://www.instagram.com/clem_piru/";
+  // if (social === "linkedin")
+  //   window.location = "https://www.linkedin.com/in/francesco-di-clemente";
 };

@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  background-color: f4f4f4;
+  background-color: #f4f4f4;
   color: black;
   text-align: center;
   padding: 1rem;
@@ -145,27 +145,28 @@ li {
   margin-top: -25%;
   transition: all 250ms;
 }
-.avatar-wrapper:hover .avatar {
-  transform: scale(1.1);
-}
 .avatar-wrapper:hover .overlay {
   opacity: 1;
 }
+.avatar-wrapper:hover .avatar {
+  transform: scale(1.1);
+}
 
-/* The overlay effect - lays on top of the container and over the image
+/* The overlay effect - lays on top of the container and over the image*/
 .overlay {
   position: absolute;
-  top: 0;
-  background: rgba(141, 141, 141, 0.5); 
+  top: 50%;
   width: 100%;
+  height: 100%;
   transition: 0.5s ease;
   opacity: 0;
   color: white;
   font-size: 20px;
-  padding: 20px;
   text-align: center;
-} */
-
+}
+.overlay i {
+  font-size: 3em;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
